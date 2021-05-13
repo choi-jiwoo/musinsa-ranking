@@ -3,6 +3,7 @@ import datetime
 def to_html(keyword_rank, now):
     """
     :param keyword_rank: dataframe to print
+    :param now: date and time
     :return: html format
     """
     content = '<html>\n<body>\n'
