@@ -12,8 +12,8 @@ def send_email(send_to, content):
     :param content: email content
     """
     # email and password setting
-    pw = os.environ['EMAIL_PW']
     sent_from = os.environ['EMAIL_ADDRESS_FROM']
+    pw = os.environ['EMAIL_PW']
     
     # connect to a server
     smtp = smtplib.SMTP('smtp.gmail.com', 587)
