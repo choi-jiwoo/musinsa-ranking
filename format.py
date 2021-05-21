@@ -2,9 +2,9 @@ import datetime
 
 def to_html(keyword_rank, now):
     """
-    :param keyword_rank: dataframe to print
-    :param now: date and time
-    :return: html format
+    :param keyword_rank: 메일 내용에 추가할 dataframe
+    :param now: 현재시각
+    :return: html 포맷으로 된 내용
     """
     content = '<html>\n<body>\n'
     content += "<h3>"+str("무신사 스토어 {} 검색어 랭킹".format(now))+"</h3>\n"
