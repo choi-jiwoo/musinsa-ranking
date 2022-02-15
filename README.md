@@ -23,14 +23,6 @@ env:
   # username: ${{ secrets.username }}
 ```
 
-### 파일
-
-`main.py` - 이메일 전송
-
-`crawl.py` - 검색어 크롤링
-
-`format.py` - 이메일로 보낼 결과물 포맷 설정
-
 ### Gmail 보안 문제
 
 구글 계정에 2단계 인증이 되어있고 '앱 비밀번호'를 생성한 후 '앱 비밀번호'를 secrets에 추가하고 해당 secrets를 이용해 로그인해야 함
