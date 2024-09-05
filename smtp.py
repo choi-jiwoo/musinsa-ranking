@@ -12,7 +12,7 @@ class Smtp:
         self.address = address
         self.password = password
 
-        self.smtp = smtplib.SMTP('smtp.gmail.com', 587)
+        self.smtp = smtplib.SMTP('smtp.naver.com', 587)
         self.smtp.ehlo()
         self.smtp.starttls()
 
@@ -43,6 +43,7 @@ class Smtp:
         html_content = util.to_html(content, now)
         body = MIMEText(html_content, 'html')
         msg.attach(body)
+        msg['From'] = self.address
         msg['To'] = receiver
 
         self.smtp.login(self.address, self.password)
